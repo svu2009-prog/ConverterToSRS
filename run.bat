@@ -1,28 +1,27 @@
 @echo off
-chcp 65001 >nul
 title List Processor for sing-box
 
 where python >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Python не найден. Установите Python 3.12+ и повторите запуск.
+    echo Python is not found. Please install Python 3.12+ and try again.
     pause
     exit /b 1
 )
 
 if not exist "requirements.txt" (
-    echo requirements.txt не найден.
+    echo requirements.txt not found.
     pause
     exit /b 1
 )
 
-echo Установка зависимостей...
+echo Installing dependencies...
 pip install -r requirements.txt -q
 
-echo Запуск приложения...
+echo Starting application...
 python main.py
 
 if %errorlevel% neq 0 (
     echo.
-    echo Произошла ошибка. Нажмите любую клавишу для выхода.
+    echo An error occurred. Press any key to exit.
     pause
 )
