@@ -170,6 +170,13 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+# User settings
+settings.json
+
+# Logs
+logs/
+
+
 # PyPI configuration file
 .pypirc
 
