@@ -34,6 +34,10 @@
 pip install -r requirements.txt
 ```
 
+### Быстрый запуск (Windows)
+
+Просто запустите `run.bat` двойным щелчком — скрипт сам установит зависимости и откроет приложение.
+
 ### sing-box (для создания SRS)
 
 Установите [sing-box](https://github.com/SagerNet/sing-box/releases) одним из способов:
